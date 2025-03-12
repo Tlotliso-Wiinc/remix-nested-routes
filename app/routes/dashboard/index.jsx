@@ -1,4 +1,4 @@
 
 export default function DashboardIndex() {
-    return <h2>Welcome to the dashboard!</h2>;
+    return <h2>Dashboard Overview</h2>;
 }

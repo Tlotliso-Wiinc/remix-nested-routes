@@ -1,13 +1,25 @@
-import { redirect } from "@remix-run/react";
+import { redirect, Link } from "@remix-run/react";
 
 export const loader = () => {
-    return redirect('/dashboard')
+  // return redirect('/dashboard')
+  return [];
 }
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome, to my cool app</h1>
+      <h1>Home Page</h1>
+      <ul>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
+      </ul>
     </div>
   );
 }
